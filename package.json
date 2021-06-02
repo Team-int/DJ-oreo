@@ -1,0 +1,36 @@
+{
+  "name": "code-template",
+  "version": "0.0.1",
+  "description": "A Fast useful template",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon .",
+    "test": "npm run lint && npm run lint:commands",
+    "lint": "eslint ./src",
+    "lint:commands": "eslint ./src/commands/ --no-ignore",
+    "lint:fix": "eslint ./src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadeGOD/code-template.git"
+  },
+  "author": "MadeGOD",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "nodemon": "^2.0.7"
+  },
+  "eslintIgnore": [
+    "/src/commands/*"
+  ],
+  "dependencies": {
+    "@discordjs/opus": "^0.5.0",
+    "discord.js": "^13.0.0-dev.5141ea4f0694a60375d8bc0801b1225928bb3bd1",
+    "dokdo": "^0.3.0",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "music-discord": "^1.1.0",
+    "node-fetch": "^2.6.1"
+  }
+}
